@@ -7,7 +7,7 @@ name: php
 # The build-time dependencies of the app.
 dependencies:
     php:
-        "drush/drush": "7.0.0-rc1"
+        "drush/drush": "7.0.0-rc2"
 
 # The toolstack used to build the application.
 toolstack: "php:drupal"
@@ -46,7 +46,6 @@ hooks:
       # automatically during install.
       mkdir -p config/active config/staging
       cd public
-      drush -y updatedb
 
 # The configuration of scheduled execution.
 crons:
